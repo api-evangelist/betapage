@@ -1,14 +1,13 @@
 aid: betapage
-url: 
-  https://raw.githubusercontent.com/api-evangelist/betapage/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/betapage/refs/heads/main/apis.yml
 apis: []
 name: BetaPage
 tags:
-  - Startups
   - Beta Testing
-  - Product Launch
   - Early Adopters
+  - Product Launch
   - Startup Directory
+  - Startups
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party

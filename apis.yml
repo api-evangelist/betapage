@@ -19,6 +19,8 @@ description: >-
   identified for BetaPage or its successor PitchWall.
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/betapage
   - type: Website
     url: https://betapage.co/
   - type: Login

@@ -2,6 +2,10 @@
   "repo": "betapage",
   "feeds": [
     {
+      "source": "https://blog.betapage.co/feed/",
+      "error": "URLError"
+    },
+    {
       "source": "https://betapage.co/submit",
       "feed_url": "https://betapage.co/submit",
       "title": "",
@@ -9,6 +13,6 @@
       "method": "none"
     }
   ],
-  "fetched": "2026-06-01T23:35:02Z",
+  "fetched": "2026-06-14T20:42:17Z",
   "post_count": 0
 }

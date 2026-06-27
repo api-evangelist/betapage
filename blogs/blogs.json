@@ -2,17 +2,11 @@
   "repo": "betapage",
   "feeds": [
     {
-      "source": "https://blog.betapage.co/feed/",
-      "error": "URLError"
-    },
-    {
-      "source": "https://betapage.co/submit",
-      "feed_url": "https://betapage.co/submit",
-      "title": "",
+      "source": "https://blog.betapage.co/",
       "saved": 0,
-      "method": "none"
+      "error": "TLS certificate expired"
     }
   ],
-  "fetched": "2026-06-14T20:42:17Z",
+  "fetched": "2026-06-27T12:27:42Z",
   "post_count": 0
 }

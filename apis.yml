@@ -19,6 +19,8 @@ description: >-
   identified for BetaPage or its successor PitchWall.
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/betapage-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/betapage
   - type: Website

@@ -1,0 +1,67 @@
+generated: '2026-09-19'
+method: searched
+source: https://pitchwall.co/pages/advertise
+plan_count: 4
+api_plan_count: 0
+subject: advertising-and-sponsorship
+description: >-
+  IMPORTANT FOR ANY READER SCORING THIS RECORD: the four priced tiers below are ADVERTISING and
+  NEWSLETTER SPONSORSHIP placements on the PitchWall directory, not API plans. BetaPage (now
+  PitchWall; https://betapage.co/ -> 301 -> https://pitchwall.co/) sells no API product, has no
+  developer plan, no metered API pricing and no key that could be billed, so api_plan_count is 0.
+  The tiers are captured because the company genuinely publishes a transparent, self-serve price
+  list on the successor domain, which is a real commercial-transparency signal about the
+  business; they must not be read as evidence of a priced API. Product LISTINGS are free (the FAQ
+  states "Founders can also list their products for free", with a 30+ day review queue) and a paid
+  Featured Listing exists with no price stated on the public FAQ or advertise page.
+currency: USD
+plans:
+- name: Website Ad
+  price: 199
+  currency: USD
+  period: month
+  included: Prominent ad placement on the PitchWall homepage for a full month; 250,000+ impressions expected during the campaign period
+  category: homepage-ad
+- name: Spotlight Ad
+  price: 899
+  currency: USD
+  period: month
+  included: Exclusive top-of-homepage placement across the entire website with highlighted background; 80-100 character pitch; only one sponsor slot available at a time; 500,000+ monthly page views
+  category: homepage-ad
+- name: Sponsor a newsletter
+  price: 199
+  currency: USD
+  period: one-time
+  included: Banner ad at the top of one newsletter, above all featured tools; reaches 50,000+ subscribers
+  category: newsletter
+- name: Dedicated Newsletter
+  price: 599
+  currency: USD
+  period: one-time
+  included: A full newsletter campaign dedicated solely to one product, with no other products featured; reaches 50,000+ subscribers
+  category: newsletter
+free_tier:
+  available: true
+  scope: product listing
+  note: >-
+    Free listings go through the standard review queue with a typical waiting period of 30+ days
+    before publication (https://pitchwall.co/pages/faqs).
+enterprise:
+  contact_only: true
+  note: >-
+    Every tier is bought by emailing support@pitchwall.co ("Contact"); there is no self-serve
+    checkout. The Featured Listing (preferred launch date, homepage placement, newsletter spot,
+    Twitter mention, do-follow backlink) is described on the FAQ without a published price.
+probes:
+- url: https://pitchwall.co/pages/advertise
+  status: 200
+- url: https://pitchwall.co/pages/faqs
+  status: 200
+- url: https://pitchwall.co/pricing
+  status: 404
+- url: https://pitchwall.co/pages/pricing
+  status: 404
+x-evidence:
+  fetched: '2026-09-19'
+  url: https://pitchwall.co/pages/advertise
+  http_status: 200

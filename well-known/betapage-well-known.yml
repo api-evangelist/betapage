@@ -1,0 +1,111 @@
+generated: '2026-09-19'
+method: probed
+description: >-
+  Results of probing the /.well-known/ discovery surface on every host the record knows: the
+  registrable domain betapage.co and its www host, plus the two hosts betapage.co now 301s to
+  (pitchwall.co and help.pitchwall.co). apis.yml carries no APIs, so there are no baseURL or
+  OpenAPI servers[] hosts to add. betapage.co answers every path with a 301 to the same path on
+  pitchwall.co (a cross-domain rebrand redirect, not a document); www.betapage.co answers 403 to
+  every path; pitchwall.co answers 404 (JSON or HTML) to every path; help.pitchwall.co is an SPA
+  catch-all that answers 200 text/html with the identical 26,718-byte shell (canonical
+  https://help.pitchwall.co/) for every /.well-known/ path and for a nonsense path, so those 200s
+  are recorded as present-but-not-a-real-document and nothing was saved. No document was found on
+  any host, so no WellKnown / SecurityTxt pointer is wired in apis.yml.
+probed: '2026-09-19'
+hosts:
+- host: https://betapage.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    redirect: https://pitchwall.co/.well-known/security.txt
+  - path: /.well-known/openid-configuration
+    status: 301
+    redirect: https://pitchwall.co/.well-known/openid-configuration
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    redirect: https://pitchwall.co/.well-known/oauth-authorization-server
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    redirect: https://pitchwall.co/.well-known/oauth-protected-resource
+  - path: /.well-known/api-catalog
+    status: 301
+    redirect: https://pitchwall.co/.well-known/api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    redirect: https://pitchwall.co/.well-known/ai-plugin.json
+  - path: /.well-known/agent-card.json
+    status: 301
+    redirect: https://pitchwall.co/.well-known/agent-card.json
+  - path: /.well-known/agent.json
+    status: 301
+    redirect: https://pitchwall.co/.well-known/agent.json
+- host: https://www.betapage.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+- host: https://pitchwall.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://help.pitchwall.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    type: text/html
+    note: SPA catch-all shell, not a document; treated as a miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    type: text/html
+    note: SPA catch-all shell, not a document; treated as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    type: text/html
+    note: SPA catch-all shell, not a document; treated as a miss
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    type: text/html
+    note: SPA catch-all shell, not a document; treated as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    type: text/html
+    note: SPA catch-all shell, not a document; treated as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    type: text/html
+    note: SPA catch-all shell, not a document; treated as a miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    type: text/html
+    note: SPA catch-all shell, not a document; treated as a miss
+  - path: /.well-known/agent.json
+    status: 200
+    type: text/html
+    note: SPA catch-all shell, not a document; treated as a miss

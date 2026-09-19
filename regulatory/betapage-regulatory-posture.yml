@@ -1,0 +1,40 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+description: >-
+  Horizontal regulatory signals BetaPage publishes on a public surface. BetaPage rebranded to
+  PitchWall and every betapage.co path 301s to pitchwall.co, so the only legal pages the company
+  serves live on the successor domain (https://betapage.co/pages/terms -> 301 ->
+  https://pitchwall.co/pages/terms). The privacy policy carries a real data-subject-request
+  mechanism (section 8 "Access, Update, or Delete Your Data": self-serve via Edit Profile >
+  Account, or email support@pitchwall.co for account deletion, email changes and "data access or
+  portability requests"). Nothing else was found: no security.txt, accessibility statement, VPAT,
+  subprocessor list, DPA, SBOM, support-lifetime statement, AI transparency page, GPC statement,
+  data-residency doc, transparency report or notice-and-action page on any probed host.
+signals:
+  data_subject_request:
+    url: https://pitchwall.co/pages/privacy-policy
+    mechanism: self-serve account dashboard (Edit Profile > Account) or email support@pitchwall.co
+    covers: [access, update, deletion, portability]
+    evidence:
+    - source: https://pitchwall.co/pages/privacy-policy
+      http_status: 200
+      keywords: [GDPR, access, update, delete your data, data access or portability requests]
+probes:
+- url: https://betapage.co/.well-known/security.txt
+  status: 301
+- url: https://pitchwall.co/.well-known/security.txt
+  status: 404
+- url: https://pitchwall.co/pages/privacy-policy
+  status: 200
+- url: https://pitchwall.co/pages/terms
+  status: 200
+- url: https://pitchwall.co/sitemaps/pages_sitemap.xml
+  status: 200
+  note: 10 URLs (home, submit, contact, faqs, media-kit, advertise, write-a-guest-post, blog, subscribe, tag); no accessibility, legal, transparency or trust page
+- url: https://pitchwall.co/legal/subprocessors
+  status: 404
+- url: https://pitchwall.co/accessibility
+  status: 404
+- url: https://pitchwall.co/transparency
+  status: 404

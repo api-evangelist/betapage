@@ -34,7 +34,7 @@ tags:
   - Beta Testing
 kind: company
 created: '2026-04-19'
-modified: '2026-04-19'
+modified: '2026-09-19'
 description: >-
   BetaPage was a startup discovery and listing platform where founders, makers, and
   early adopters could discover and submit beta-stage and newly launched tech products.
@@ -50,24 +50,36 @@ common:
     url: https://github.com/betapage
   - type: Website
     url: https://betapage.co/
-  - type: Login
-    url: https://betapage.co/login
   - type: Portal
     url: https://betapage.co/submit
   - type: Blog
     url: https://blog.betapage.co/
   - type: Support
     url: https://help.betapage.co/
-  - type: GettingStarted
-    url: https://help.betapage.co/post/how-do-i-get-started
-  - type: Marketplace
-    url: https://deals.betapage.co/
   - type: X
     url: https://x.com/beta_page
   - type: Facebook
     url: https://www.facebook.com/betapage.co/
   - type: LinkedIn
     url: https://www.linkedin.com/company/betapage
+  - type: Pricing
+    url: https://pitchwall.co/pages/advertise
+  - type: Plans
+    url: plans/betapage-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/betapage-rate-limits.yml
+  - type: RegulatoryPosture
+    url: regulatory/betapage-regulatory-posture.yml
+  - type: DataSubjectRequest
+    url: https://pitchwall.co/pages/privacy-policy
+  - type: TermsOfService
+    url: https://pitchwall.co/pages/terms
+  - type: PrivacyPolicy
+    url: https://pitchwall.co/pages/privacy-policy
+  - type: FAQ
+    url: https://pitchwall.co/pages/faqs
+  - type: Contact
+    url: https://pitchwall.co/pages/contact
   - type: Features
     data:
       - name: Startup Listing
@@ -104,3 +116,30 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 specificationVersion: '0.23'
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    BetaPage is now PitchWall (every betapage.co path 301s to pitchwall.co) and neither brand
+    ships a developer program: pitchwall.co/api, /docs, /developers and /openapi.json all 404,
+    api.betapage.co and api.pitchwall.co do not resolve, the GitHub org has 0 repositories, and
+    the word "API" appears nowhere on the home page, FAQ, advertise page or help center.
+  evidence:
+    - url: https://betapage.co/
+      status: 301
+    - url: https://pitchwall.co/api
+      status: 404
+    - url: https://pitchwall.co/openapi.json
+      status: 404
+    - url: https://pitchwall.co/developers
+      status: 404
+    - url: https://pitchwall.co/.well-known/agent-card.json
+      status: 404
+    - url: https://github.com/betapage
+      status: 200
+  checked: '2026-09-19'

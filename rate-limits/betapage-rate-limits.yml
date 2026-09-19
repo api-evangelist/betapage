@@ -1,0 +1,35 @@
+generated: '2026-09-19'
+method: searched
+source: >-
+  https://pitchwall.co/ (home, /pages/faqs, /pages/advertise, /pages/terms, /pages/privacy-policy),
+  https://help.pitchwall.co/ (13 help articles, none about an API), the pitchwall.co pages sitemap,
+  and the betapage GitHub organization (0 public repositories), probed 2026-09-19.
+description: >-
+  BetaPage publishes no rate limits because it publishes no API to limit. BetaPage rebranded to
+  PitchWall (every betapage.co path 301s to pitchwall.co) and neither brand documents an API,
+  a developer program, a base URL, an SDK or a key: https://pitchwall.co/api, /docs, /developers
+  and /openapi.json all return 404, api.betapage.co and api.pitchwall.co do not resolve in DNS,
+  and the word "API" does not appear on the home page, FAQ, advertise page or help center.
+limit_count: 0
+headers: {}
+response_codes: {}
+limits: []
+probes:
+- url: https://pitchwall.co/api
+  status: 404
+- url: https://pitchwall.co/docs
+  status: 404
+- url: https://pitchwall.co/developers
+  status: 404
+- url: https://pitchwall.co/openapi.json
+  status: 404
+- url: https://api.betapage.co/
+  status: 0
+  note: NXDOMAIN
+- url: https://api.pitchwall.co/
+  status: 0
+  note: NXDOMAIN
+note: >-
+  limit_count 0 is a measured zero, not an unchecked field: the public surface was read and
+  contains no quota, no throttle, no exhaustion status code and no rate-limit header, because
+  there is no HTTP API surface for them to apply to.

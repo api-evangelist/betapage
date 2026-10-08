@@ -65,3 +65,38 @@ x-evidence:
   fetched: '2026-09-19'
   url: https://pitchwall.co/pages/advertise
   http_status: 200
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Website Ad
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Spotlight Ad
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Sponsor a newsletter
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - one-time
+  - name: Dedicated Newsletter
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - one-time

@@ -1,4 +1,4 @@
-# BetaPage (betapage)
+# BetaPage
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,62 +66,95 @@
 
 BetaPage was a startup discovery and listing platform where founders, makers, and early adopters could discover and submit beta-stage and newly launched tech products. The platform served a community of 65,000+ startup founders and tech enthusiasts with 40,000+ tech products listed. BetaPage has since rebranded and redirects to PitchWall (pitchwall.co), an AI product discovery platform. No public developer API has been identified for BetaPage or its successor PitchWall.
 
-**URL:** [https://betapage.co/](https://betapage.co/)
+**Areas:** Startups · Product Launch · Startup Directory · Early Adopters · Beta Testing
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## BetaPage on APIs.io
 
-## Tags:
+Everything profiled for BetaPage is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/betapage/](https://apis.io/providers/betapage/)** — or go straight to one of the APIs or properties below.
 
- - Startups, Product Launch, Startup Directory, Early Adopters, Beta Testing
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-04-19
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Betapage Domain Security](https://apis.io/security/betapage/betapage-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Betapage Plans Pricing](https://apis.io/plans/betapage/betapage-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Betapage Rate Limits](https://apis.io/rate-limits/betapage/betapage-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://betapage.co/)
-- [Login](https://betapage.co/login)
-- [Portal](https://betapage.co/submit)
-- [Blog](https://blog.betapage.co/)
+- [Pricing](https://pitchwall.co/pages/advertise)
 - [Support](https://help.betapage.co/)
-- [GettingStarted](https://help.betapage.co/post/how-do-i-get-started)
-- [Marketplace](https://deals.betapage.co/)
-- [X](https://x.com/beta_page)
-- [Facebook](https://www.facebook.com/betapage.co/)
-- [LinkedIn](https://www.linkedin.com/company/betapage)
+- [Blog](https://blog.betapage.co/)
+- [Terms of service](https://pitchwall.co/pages/terms)
+- [Privacy policy](https://pitchwall.co/pages/privacy-policy)
+- [GitHub](https://github.com/betapage)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Startup Listing | Submit and list beta-stage or newly launched tech products for community discovery. |
-| Community Upvoting | Community members upvote products, with top-voted products appearing on the homepage. |
-| Instant Publishing | Startups are published instantly upon submission for immediate community exposure. |
-| Featured Listings | Paid featured placements on the homepage and through the newsletter for expanded reach. |
-| Newsletter Distribution | Newsletter with 30,000+ subscribers distributes featured startups to an engaged audience. |
-| Deals Section | A dedicated deals section offering discounts on startup products. |
-| Beta Subscriber Acquisition | Founders gain beta subscribers, early adopters, and traffic through the platform. |
+**Kin Score 20.3** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 10.7 |
+| Access clarity | 63.2 |
 
-| Name | Description |
-|------|-------------|
-| Startup Launch Visibility | Gain initial product visibility and beta users by submitting a product to BetaPage. |
-| Early Adopter Acquisition | Reach a community of 65,000+ early adopters and tech enthusiasts at product launch. |
-| Product Discovery | Browse and discover newly launched tech products across various categories. |
-| Feedback Collection | Collect early user feedback from an engaged community of startup enthusiasts. |
-| Newsletter Marketing | Distribute product announcements to 30,000+ newsletter subscribers via featured listings. |
+**Agent readiness 2.5** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| PitchWall | BetaPage has rebranded and now redirects to PitchWall (pitchwall.co), an AI product discovery platform. |
+**Regulatory alignment 17.6** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/betapage/](https://apis.io/providers/betapage/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for BetaPage: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/betapage/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
